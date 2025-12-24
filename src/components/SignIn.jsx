@@ -11,6 +11,13 @@ const SignIn = () => {
             <input 
             className='bg-white px-10 py-2 rounded border border-gray-200'
             type="email" placeholder='Enter email address' />
+
+            <label htmlFor="email">Password</label>
+            <input 
+            className='bg-white px-10 py-2 rounded border border-gray-200'
+            type="email" placeholder='Enter password' />
+
+            <button className='bg-[#6C25FF] px-28 py-2 my-2 rounded border text-white border-gray-200'>Login</button>
         </div>
 
     </div>
