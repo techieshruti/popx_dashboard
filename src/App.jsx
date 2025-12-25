@@ -1,5 +1,4 @@
-import React from 'react'
-import Home from './Pages/Home'
+import { BrowserRouter, Routes, Route } from "react-router-dom";import Home from './Pages/Home'
 import SignIn from './Pages/SignIn'
 import Account from './Pages/Account'
 import Profile from './Pages/Profile'
@@ -14,13 +13,14 @@ const formData=[
 
 const App = () => {
   return (
-    <div  className="flex justify-center items-center min-h-screen">
-      <Home/>
-      <SignIn/>
-     <Account formData={formData}/>
-     <Profile/>
-      
-    </div>
+     <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/account" element={<Account formData={formData} />} />
+        <Route path="/profile" element={<AccountSettings />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

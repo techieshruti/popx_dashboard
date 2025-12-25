@@ -1,5 +1,6 @@
 import { useState } from "react";
 import RadioOption from "../components/RadioOption";
+import { useNavigate } from "react-router-dom";
 
 const agencyOptions = [
   { label: "Yes", value: "yes" },
@@ -7,6 +8,7 @@ const agencyOptions = [
 ];
 
 const Account = ({ formData }) => {
+  const navigate = useNavigate();
   const [agency, setAgency] = useState("yes");
 
   return (
@@ -57,17 +59,9 @@ const Account = ({ formData }) => {
         </div>
         {/* Buttons */}
         <div className="flex flex-col gap-3">
-          <button className="w-full 
-    bg-[#6C25FF] 
-    text-white 
-    font-semibold 
-    py-3 
-    rounded-md 
-    mt-4
-    transition-colors 
-    duration-200 
-    ease-in-out
-    active:bg-blue-500">
+          <button 
+          onClick={() => navigate("/profile")}
+          className="w-full bg-[#6C25FF] text-white font-semibold py-3 rounded-md mt-4 transition-colors duration-200 ease-in-out active:bg-blue-500">
             Create Account
           </button>
         </div>
