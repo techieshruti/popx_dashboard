@@ -23,41 +23,7 @@ const Account = ({ formData }) => {
             </div>
           ))}
           
-          <div className="mt-6">
-  <p className="text-sm font-semibold text-gray-800 mb-3">
-    Are you an Agency? <span className="text-red-500">*</span>
-  </p>
-
-  <div className="flex gap-8">
-    {/* YES */}
-    <label className="flex items-center gap-3 cursor-pointer">
-      <input
-        type="radio"
-        name="agency"
-        className="hidden peer"
-        defaultChecked
-      />
-      <span className="w-5 h-5 rounded-full border-2 border-[#6C25FF] flex items-center justify-center peer-checked:border-[#6C25FF]">
-        <span className="w-2.5 h-2.5 rounded-full bg-[#6C25FF]"></span>
-      </span>
-      <span className="text-sm text-gray-800">Yes</span>
-    </label>
-
-    {/* NO */}
-    <label className="flex items-center gap-3 cursor-pointer">
-      <input
-        type="radio"
-        name="agency"
-        className="hidden peer"
-      />
-      <span className="w-5 h-5 rounded-full border-2 border-gray-400 flex items-center justify-center peer-checked:border-[#6C25FF]">
-        <span className="w-2.5 h-2.5 rounded-full bg-[#6C25FF] hidden peer-checked:block"></span>
-      </span>
-      <span className="text-sm text-gray-800">No</span>
-    </label>
-  </div>
-</div>
-
+        
         </form>
         <button className="w-full bg-purple-300 text-white font-semibold py-3 rounded-md cursor-pointer mt-2">
           Create Account
