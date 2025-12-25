@@ -1,7 +1,7 @@
 import React from 'react'
-import Home from './components/Home'
-import SignIn from './components/SignIn'
-import Account from './components/Account'
+import Home from './Pages/Home'
+import SignIn from './Pages/SignIn'
+import Account from './Pages/Account'
 
 const formData=[
   {id:1, label:"Full Name", placeholder:"Enter your name", type: "text"},
@@ -9,7 +9,6 @@ const formData=[
   {id:3, label:"Email address", placeholder:"Enter email",type: "email"},
   {id:4, label:"Password", placeholder:"Enter password", type: "password"},
   {id:5, label:"Company Name", placeholder:"Enter company name", type: "text"},
-  {id:6, label:"Company Name", placeholder:"Enter company name", type: "text"},
 ]
 
 const App = () => {
