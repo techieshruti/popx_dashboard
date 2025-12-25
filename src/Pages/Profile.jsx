@@ -24,6 +24,18 @@ const Profile = () => {
             <p className="text-sm font-semibold text-gray-900">Marry Doe</p>
             <p className="text-xs text-gray-500">Marry@gmail.com</p>
           </div>
+
+          {/* Description */}
+        <div className="px-6">
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, 
+            Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore 
+            Magna Aliquyam Erat, Sed Diam
+          </p>
+        </div>
+        {/* Bottom spacer */}
+        <div className="flex-1 border-t border-dashed border-gray-200 mt-6" />
+
         </div>
         </div>
       </div>
