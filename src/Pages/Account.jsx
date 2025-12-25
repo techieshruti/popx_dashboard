@@ -31,7 +31,7 @@ const Account = ({ formData }) => {
               <input
                 type={data.type}
                 placeholder={data.placeholder}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none"
+                className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none" required
               />
             </div>
           ))}

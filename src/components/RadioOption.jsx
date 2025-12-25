@@ -9,7 +9,7 @@ const RadioOption = ({ label, value, name, checked, onChange }) => {
         value={value}
         checked={checked}
         onChange={onChange}
-        className="peer hidden"
+        className="peer hidden" required
       />
 
       <span
