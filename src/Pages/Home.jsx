@@ -7,7 +7,7 @@ const Home = () => {
 
         {/* introduction */}
         <div className="mb-2 mr-20">
-          <h1 className=" font-bold text-2xl mb-2">Welcome to PopX</h1>
+          <h1 className=" font-bold text-3xl mb-2">Welcome to PopX</h1>
           <p className="pb-4 text-gray-500">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           </p>

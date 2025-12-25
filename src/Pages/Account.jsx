@@ -14,7 +14,7 @@ const Account = ({ formData }) => {
       <div className="w-[375px] h-[812px] bg-gray-50 border flex flex-col justify-between border-gray-200 px-4 pb-8">
 
         <div className="">
-          <h1 className="text-3xl font-bold pb-6">
+          <h1 className="text-3xl font-bold pb-6 pt-6">
           Create your PopX account
         </h1>
 
@@ -57,7 +57,17 @@ const Account = ({ formData }) => {
         </div>
         {/* Buttons */}
         <div className="flex flex-col gap-3">
-          <button className="bg-[#6C25FF] text-white font-bold rounded-lg py-3">
+          <button className="w-full 
+    bg-[#6C25FF] 
+    text-white 
+    font-semibold 
+    py-3 
+    rounded-md 
+    mt-4
+    transition-colors 
+    duration-200 
+    ease-in-out
+    active:bg-blue-500">
             Create Account
           </button>
         </div>

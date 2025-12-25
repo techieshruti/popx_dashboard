@@ -2,7 +2,7 @@ import { Camera } from "lucide-react";
 
 const AccountSettings = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#CBCBCB]">
+    <div className="min-h-screen flex items-center justify-center ">
       <div className="w-[375px] h-[812px] bg-gray-50 border border-gray-200 flex flex-col">
 
         {/* Header */}
