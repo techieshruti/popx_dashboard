@@ -1,4 +1,11 @@
 import React from "react";
+import RadioOption from "../components/RadioOption";
+
+const agencyOptions = [
+  { label: "Yes", value: "yes", checked: true },
+  { label: "No", value: "no" },
+];
+
 
 const Account = ({ formData }) => {
   return (
@@ -23,7 +30,24 @@ const Account = ({ formData }) => {
             </div>
           ))}
           
-        
+        <div className="mt-6">
+  <p className="text-sm font-semibold text-gray-800 mb-3">
+    Are you an Agency? <span className="text-red-500">*</span>
+  </p>
+
+  <div className="flex gap-8">
+    {agencyOptions.map((option) => (
+      <RadioOption
+        key={option.value}
+        name="agency"
+        label={option.label}
+        value={option.value}
+        defaultChecked={option.checked}
+      />
+    ))}
+  </div>
+</div>
+
         </form>
         <button className="w-full bg-purple-300 text-white font-semibold py-3 rounded-md cursor-pointer mt-2">
           Create Account
