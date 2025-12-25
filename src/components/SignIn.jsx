@@ -2,22 +2,31 @@ import React from 'react'
 
 const SignIn = () => {
   return (
-    <div className='w-[300px] h-[550px] flex pb-8 bg-gray-50 border border-gray-300 justify-end px-4 pt-8'>
-        <div>
-            <h1 className='font-bold text-2xl text-gray-800 pr-16'>Signin to your PopX account</h1>
-            <p className='text-gray-500 py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div className='min-h-screen flex items-center justify-center'>
+        <div className="w-[375px] h-[812px] bg-gray-50 border border-gray-200 px-6 pt-10">
+            <div className='mr-30'>
+              <h1 className='text-2xl font-bold text-gray-900 mb-2 '>Signin to your PopX account</h1>
+            <p className='text-gray-500 mb-6 leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
 
-            <label htmlFor="email">Email Address</label>
+            <div className='relative'>
+              <label 
+            className='block absolute -top-2 left-3 bg-white px-1 text-xs text-[#6C25FF] mb-1'
+            htmlFor="email">Email Address</label>
+            </div>
             <input 
-            className='bg-white px-10 py-2 rounded border border-gray-200'
+            className='w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none'
             type="email" placeholder='Enter email address' />
 
-            <label htmlFor="email">Password</label>
+            <label 
+            className='block text-xs text-[#6C25FF] mb-1'
+            htmlFor="email">Password</label>
             <input 
-            className='bg-white px-10 py-2 rounded border border-gray-200'
-            type="email" placeholder='Enter password' />
+            className='w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none'
+            type="password" placeholder='Password' />
 
-            <button className='bg-[#6C25FF] px-28 py-2 my-2 rounded border text-white border-gray-200'>Login</button>
+            <button 
+            className='w-full bg-purple-300 text-white font-semibold py-3 rounded-md cursor-pointer mt-2'>Login</button>
         </div>
 
     </div>
