@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Account = () => {
+const Account = ({formData}) => {
   return (
     <div className='min-h-screen flex items-center justify-center'>
         <div className='w-[375px] h-[812px] bg-gray-50 border border-gray-200 px-6 pt-10'>
@@ -11,11 +11,11 @@ const Account = () => {
                <div className='relative'>
               <label 
             className='block absolute -top-2 left-3 bg-white px-1 text-xs text-[#6C25FF] mb-1'
-            htmlFor="password">Full Name</label>
+            htmlFor="password">{formData.label}</label>
             </div>
             <input 
             className='w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none'
-            type="text" placeholder='Enter your name' />
+            type="text" placeholder={formData.placeholder} />
 
                 <input type="text" />
                 <input type="text" />
