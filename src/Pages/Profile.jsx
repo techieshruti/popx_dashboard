@@ -1,31 +1,36 @@
-import React from "react";
-
-const Profile = () => {
+const AccountSettings = () => {
   return (
-    <div className="w-[375px] h-[812px] pb-8 bg-gray-50 border border-gray-300 justify-end px-4">
-      <div className="w-[375px] h-[812px] bg-white flex flex-col">
-        <div className="px-6 py-4 border-b border-gray-200">
-          <h1 className="text-sm font-semibold text-gray-800">
+    <div className="min-h-screen flex items-center justify-center bg-[#CBCBCB]">
+      <div className="w-[375px] h-[812px] bg-gray-50 border border-gray-200 flex flex-col">
+
+        {/* Header */}
+        <div className="px-6 py-4 bg-[#F7F8F9] border-b border-gray-200">
+          <h2 className="text-sm font-semibold text-gray-800">
             Account Settings
-          </h1>
+          </h2>
         </div>
 
-        <div className="h-[812px] bg-gray-50">
-            {/* profile */}
+        {/* Profile section */}
         <div className="px-6 py-5 flex items-center gap-4">
-          {/* image */}
+          {/* Avatar */}
           <img
             src="https://randomuser.me/api/portraits/women/44.jpg"
             alt="Profile"
             className="w-12 h-12 rounded-full object-cover"
           />
-          {/* Name & email */}
-          <div>
-            <p className="text-sm font-semibold text-gray-900">Marry Doe</p>
-            <p className="text-xs text-gray-500">Marry@gmail.com</p>
-          </div>
 
-          {/* Description */}
+          {/* Name & email */}
+          <div className="text-gray-900">
+            <p className="text-sm font-semibold">
+              Marry Doe
+            </p>
+            <p className="text-xs">
+              Marry@gmail.com
+            </p>
+          </div>
+        </div>
+
+        {/* Description */}
         <div className="px-6">
           <p className="text-sm text-gray-600 leading-relaxed">
             Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, 
@@ -33,14 +38,13 @@ const Profile = () => {
             Magna Aliquyam Erat, Sed Diam
           </p>
         </div>
-        {/* Bottom spacer */}
-        <div className="flex-1 border-t border-dashed border-gray-200 mt-6" />
 
-        </div>
-        </div>
+        {/* Bottom spacer */}
+        <div className="flex-1 border-t border-dashed border-gray-300 mt-6" />
+
       </div>
     </div>
   );
 };
 
-export default Profile;
+export default AccountSettings;
