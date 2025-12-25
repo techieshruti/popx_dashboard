@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './Pages/Home'
 import SignIn from './Pages/SignIn'
 import Account from './Pages/Account'
+import Profile from './Pages/Profile'
 
 const formData=[
   {id:1, label:"Full Name", placeholder:"Enter your name", type: "text"},
@@ -16,7 +17,8 @@ const App = () => {
     <div  className="flex justify-center items-center min-h-screen">
       {/* <Home/> */}
       {/* <SignIn/> */}
-     <Account formData={formData}/>
+     {/* <Account formData={formData}/> */}
+     <Profile/>
       
     </div>
   )

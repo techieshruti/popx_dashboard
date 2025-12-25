@@ -11,7 +11,7 @@ const Account = ({ formData }) => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="w-[375px] h-[812px] bg-gray-50 border flex flex-col border-gray-200 px-4 pb-8">
+      <div className="w-[375px] h-[812px] bg-gray-50 border flex flex-col justify-between border-gray-200 px-4 pb-8">
 
         <div className="">
           <h1 className="text-3xl font-bold pb-6">

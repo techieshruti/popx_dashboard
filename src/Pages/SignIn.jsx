@@ -3,7 +3,7 @@ import React from 'react'
 const SignIn = () => {
   return (
     <div className='min-h-screen flex items-center justify-center'>
-        <div className="w-[375px] h-[812px] bg-gray-50 border flex border-gray-200 px-6 pt-10">
+        <div className="w-[375px] h-[812px] bg-gray-50 border border-gray-200 px-6 pt-10">
             <div className='mr-30'>
               <h1 className='text-2xl font-bold text-gray-900 mb-2'>Signin to your PopX account</h1>
             <p className='text-gray-400 mb-6 font-semibold leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
