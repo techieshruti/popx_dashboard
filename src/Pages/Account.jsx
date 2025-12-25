@@ -11,9 +11,10 @@ const Account = ({ formData }) => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="w-[375px] h-[812px] bg-gray-50 border border-gray-200 px-6 pt-10">
+      <div className="w-[375px] h-[812px] bg-gray-50 border flex flex-col border-gray-200 px-4 pb-8">
 
-        <h1 className="text-3xl font-bold pb-6">
+        <div className="">
+          <h1 className="text-3xl font-bold pb-6">
           Create your PopX account
         </h1>
 
@@ -53,11 +54,15 @@ const Account = ({ formData }) => {
             </div>
           </div>
         </form>
-
-        <button className="w-full bg-purple-300 text-white font-semibold py-3 rounded-md mt-4">
-          Create Account
-        </button>
+        </div>
+        {/* Buttons */}
+        <div className="flex flex-col gap-3">
+          <button className="bg-[#6C25FF] text-white font-bold rounded-lg py-3">
+            Create Account
+          </button>
+        </div>
       </div>
+      
     </div>
   );
 };

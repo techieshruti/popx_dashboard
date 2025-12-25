@@ -3,7 +3,7 @@ import React from 'react'
 const SignIn = () => {
   return (
     <div className='min-h-screen flex items-center justify-center'>
-        <div className="w-[375px] h-[812px] bg-gray-50 border border-gray-200 px-6 pt-10">
+        <div className="w-[375px] h-[812px] bg-gray-50 border flex border-gray-200 px-6 pt-10">
             <div className='mr-30'>
               <h1 className='text-2xl font-bold text-gray-900 mb-2'>Signin to your PopX account</h1>
             <p className='text-gray-400 mb-6 font-semibold leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -16,7 +16,7 @@ const SignIn = () => {
             </div>
 
             <input 
-            className='w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none mb-4'
+            className='w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none mb-6'
             type="email" placeholder='Enter email address' />
 
             <div className='relative'>
@@ -29,7 +29,7 @@ const SignIn = () => {
             type="password" placeholder='Password' />
 
             <button 
-            className='w-full bg-purple-300 text-white font-semibold py-3 rounded-md cursor-pointer mt-2'>Login</button>
+            className='w-full bg-purple-300 text-white font-semibold py-3 rounded-md cursor-pointer mt-4'>Login</button>
         </div>
 
     </div>
