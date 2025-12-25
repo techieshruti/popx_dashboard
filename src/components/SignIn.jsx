@@ -14,13 +14,16 @@ const SignIn = () => {
             className='block absolute -top-2 left-3 bg-white px-1 text-xs text-[#6C25FF] mb-1'
             htmlFor="email">Email Address</label>
             </div>
+
             <input 
             className='w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none'
             type="email" placeholder='Enter email address' />
 
-            <label 
-            className='block text-xs text-[#6C25FF] mb-1'
-            htmlFor="email">Password</label>
+            <div className='relative'>
+              <label 
+            className='block absolute -top-2 left-3 bg-white px-1 text-xs text-[#6C25FF] mb-1'
+            htmlFor="password">Password</label>
+            </div>
             <input 
             className='w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none'
             type="password" placeholder='Password' />
