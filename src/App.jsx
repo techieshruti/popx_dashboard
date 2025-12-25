@@ -15,9 +15,9 @@ const formData=[
 const App = () => {
   return (
     <div  className="flex justify-center items-center min-h-screen">
-      {/* <Home/> */}
-      {/* <SignIn/> */}
-     {/* <Account formData={formData}/> */}
+      <Home/>
+      <SignIn/>
+     <Account formData={formData}/>
      <Profile/>
       
     </div>
