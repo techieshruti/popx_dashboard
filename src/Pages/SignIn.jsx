@@ -47,7 +47,7 @@ const navigate = useNavigate();
         {/* Button */}
         <button
           onClick={() => navigate("/profile")}
-          className="w-full bg-[#6C25FF] text-white font-semibold py-3 rounded-md 
+          className="w-full bg-[#CBCBCB] text-white font-semibold py-3 rounded-md 
             mt-4 transition-all duration-200 ease-in-out active:bg-blue-500 active:scale-[0.98]
           "
         >Login</button>
